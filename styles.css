@@ -95,3 +95,56 @@ li {
     max-width: 800px;
     margin: 20px auto;
 }
+header {
+    background-color: lightgray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0 0 15px;
+    color: white;
+}
+nav a{
+    color: white;
+    margin: 0 10px;
+}
+nav a:hover{
+    color: yellow;
+}
+main {
+    display:flex;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+aside{
+    width: 220px;
+    background-color: lightgray;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+aside h2{
+    margin-top: 0;
+}
+section{
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+footer {
+    background-color: lightgray;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+footer p{
+    color: white;
+    border: none;
+    margin: 0;
+}
