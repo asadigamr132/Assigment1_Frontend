@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -16,21 +24,23 @@ body {
     text-align: center;
 }
 
-h1 {
+.intro h1 {
     color: darkblue;
     text-align: center;
     margin-bottom: 20px;
 }
+
 #profile-title {
     color: purple;
 }
-h2 {
+
+.intro h2 {
     color: darkgreen;
     margin-top: 25px;
     margin-bottom: 15px;
 }
 
-p {
+.intro p {
     font-size: 18px;
     color: darkslategray;
     padding: 10px;
@@ -38,13 +48,47 @@ p {
     border-radius: 5px;
     line-height: 1.5;
 }
-img {
+
+.intro img {
     width: 200px;
     max-width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid darkblue;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.content h2 {
+    color: darkgreen;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 18px;
+    color: darkslategray;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+.content ul,
+.content ol {
+    background-color: white;
+    padding: 20px 40px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+.content li {
+    margin-bottom: 10px;
+    font-size: 18px;
 }
 
 a {
@@ -72,79 +116,308 @@ a:hover {
     text-decoration: none;
 }
 
-ul {
-    background-color: white;
-    padding: 20px 40px;
-    border: 1px solid gray;
-    border-radius: 8px;
-}
-
-ol {
-    background-color: white;
-    padding: 20px 40px;
-    border: 1px solid gray;
-    border-radius: 8px;
-}
-
-li {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.content {
-    max-width: 800px;
-    margin: 20px auto;
-}
 header {
-    background-color: lightgray;
+    background-color: #374151;
     color: white;
     padding: 20px;
     text-align: center;
 }
+
 header h1 {
     margin: 0 0 15px;
     color: white;
 }
-nav a{
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
     color: white;
     margin: 0 10px;
 }
-nav a:hover{
+
+nav a:hover {
     color: yellow;
 }
+
 main {
-    display:flex;
-    gap: 20px;
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
+    overflow: hidden;
 }
-aside{
+
+aside {
+    float: left;
     width: 220px;
     background-color: lightgray;
     padding: 20px;
     border: 1px solid gray;
     border-radius: 8px;
 }
-aside h2{
+
+aside h2 {
     margin-top: 0;
 }
-section{
-    flex: 1;
+
+aside ul {
+    padding-left: 20px;
+}
+
+section {
+    margin-left: 250px;
     background-color: white;
     padding: 20px;
     border: 1px solid gray;
     border-radius: 8px;
 }
+
+section h2 {
+    margin-top: 0;
+}
+
 footer {
-    background-color: lightgray;
+    clear: both;
+    background-color: #374151;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 20px;
 }
-footer p{
+
+footer p {
     color: white;
     border: none;
     margin: 0;
+}
+
+.tribute-header {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.tribute-header h1 {
+    color: white;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 40px;
+    margin: 0 0 10px;
+}
+
+.tribute-header p {
+    color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.tribute-nav {
+    background-color: #1f2937;
+    text-align: center;
+    padding: 15px;
+}
+
+.tribute-nav a {
+    color: white;
+    margin: 0 12px;
+}
+
+.tribute-nav a:hover {
+    color: #fbbf24;
+}
+
+.tribute-main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0;
+    overflow: visible;
+}
+
+.tribute-main section {
+    margin: 0 0 25px 0;
+    background-color: white;
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.tribute-main h2 {
+    color: #b45309;
+    border-bottom: 2px solid #f59e0b;
+    padding-bottom: 8px;
+}
+
+.tribute-image {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    border: 4px solid #f59e0b;
+}
+
+.tribute-main p {
+    font-size: 17px;
+    line-height: 1.6;
+    border: none;
+    padding: 0;
+}
+
+.tribute-main li {
+    margin-bottom: 10px;
+}
+
+.tribute-footer {
+    clear: both;
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.tribute-footer p {
+    color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#grades-title {
+    color: darkblue;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 30px;
+    background-color: white;
+}
+
+th,
+td {
+    border: 1px solid gray;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #374151;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+tr:hover {
+    background-color: #dbeafe;
+}
+
+.highlight-row {
+    background-color: #fef3c7;
+    font-weight: bold;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form p {
+    border: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: darkgreen;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .intro,
+    .content,
+    main,
+    .tribute-main {
+        width: 100%;
+    }
+
+    nav a,
+    .tribute-nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    aside {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    section {
+        margin-left: 0;
+    }
+
+    .tribute-header h1 {
+        font-size: 30px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
 }
