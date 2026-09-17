@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: lightblue;
+    color: darkslategray;
+}
+
+.intro {
+    background-color: white;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#profile-title {
+    color: purple;
+}
+h2 {
+    color: darkgreen;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 18px;
+    color: darkslategray;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+img {
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid darkblue;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.github-link {
+    color: white;
+    background-color: green;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.github-link:hover {
+    color: white;
+    background-color: darkgreen;
+    text-decoration: none;
+}
+
+ul {
+    background-color: white;
+    padding: 20px 40px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+ol {
+    background-color: white;
+    padding: 20px 40px;
+    border: 1px solid gray;
+    border-radius: 8px;
+}
+
+li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto;
+}
